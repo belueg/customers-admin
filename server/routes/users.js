@@ -11,7 +11,10 @@ router.get('/', (req, res) => {
 /** @description GET User by id */
 router.get('/:id', (req, res) => {
   const { id } = req.params
-  const user = db.get('users').find({ id }).value()
+  const user = db
+    .get('users')
+    .find({ id })
+    .value()
   user ? res.json({ user }) : res.json({ message: 'user not found' })
 })
 
@@ -19,9 +22,16 @@ router.get('/:id', (req, res) => {
 router.put('/:id', (req, res) => {
   const { id } = req.params
   const mutation = req.body
-  const user = db.get('users').find({ id }).value()
+  const user = db
+    .get('users')
+    .find({ id })
+    .value()
   if (!user) return res.json({ message: `user with id:"${id}" not found` })
-  const updatedUser = db.get('users').find({ id }).assign(mutation).write()
+  const updatedUser = db
+    .get('users')
+    .find({ id })
+    .assign(mutation)
+    .write()
 
   res.json({ updatedUser })
 })
@@ -29,7 +39,10 @@ router.put('/:id', (req, res) => {
 /** @description DELETE User by id */
 router.delete('/:id', (req, res) => {
   const { id } = req.params
-  const userDeleted = db.get('users').remove({ id }).write()
+  const userDeleted = db
+    .get('users')
+    .remove({ id })
+    .write()
 
   !!userDeleted.length
     ? res.json({ message: 'user deleted!' })
@@ -38,7 +51,9 @@ router.delete('/:id', (req, res) => {
 
 /** @description DELETE ALL Users */
 router.delete('/', (req, res) => {
-  db.get('users').remove().write()
+  db.get('users')
+    .remove()
+    .write()
   res.json({ message: 'dropped users!' })
 })
 
@@ -51,10 +66,18 @@ router.post('/populate/:number', (req, res) => {
       id: faker.random.uuid(),
       name: faker.name.firstName(),
       email: faker.internet.email(),
+      address: faker.address.direction(),
+      country: faker.address.county(),
+      phone: faker.phone.phoneNumber(),
+      vehicle: faker.vehicle.vehicle(),
+      model: faker.vehicle.model(),
+      color: faker.vehicle.color(),
       avatarUrl: faker.image.avatar(),
       bgImg: faker.image.nature()
     }
-    db.get('users').push(user).write()
+    db.get('users')
+      .push(user)
+      .write()
   }
 
   res.json({ message: 'users created!', 'users': db.get('users').value() })

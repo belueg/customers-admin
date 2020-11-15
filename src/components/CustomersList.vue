@@ -23,6 +23,7 @@ export default {
     this.$api
       .getUsers()
       .then(data => (this.customers = data.users))
+
       .catch(err => console.log(err))
   }
 }

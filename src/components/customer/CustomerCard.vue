@@ -9,9 +9,11 @@
     </VCardText>
 
     <VCardActions>
-      <VBtn color="orange" text>
-        Details
-      </VBtn>
+      <RouterLink :to="{ path: '/customer/' + customer.id }">
+        <VBtn color="orange" text>
+          Details
+        </VBtn>
+      </RouterLink>
     </VCardActions>
   </VCard>
 </template>

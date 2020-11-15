@@ -5,7 +5,9 @@
       <VSpacer />
     </VAppBar>
     <VMain>
-      <Home />
+      <RouterView>
+        <Home />
+      </RouterView>
     </VMain>
   </VApp>
 </template>

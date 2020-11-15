@@ -12,6 +12,7 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
+  apiUsers,
   store,
   vuetify,
   render: h => h(App)
