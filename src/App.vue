@@ -1,7 +1,10 @@
 <template>
   <VApp>
     <VAppBar app color="primary" dark>
-      <h3>Restaurants List</h3>
+      <RouterLink to="/">
+        <h3 style="color:white;">Customers List</h3>
+      </RouterLink>
+
       <VSpacer />
     </VAppBar>
     <VMain>

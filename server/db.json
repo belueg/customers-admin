@@ -1,45 +1,6 @@
 {
   "users": [
     {
-      "id": "6f46f582-11e6-423d-bb88-93081e3bc303",
-      "name": "Rossie",
-      "email": "Allison29@yahoo.com",
-      "address": "Southwest",
-      "country": "Cambridgeshire",
-      "phone": "607-482-0371 x8436",
-      "vehicle": "Jaguar Mustang",
-      "model": "Mercielago",
-      "color": "pink",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/AM_Kn2/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
-      "id": "55eb2f30-4504-4ff0-b9f6-09b0838e9944",
-      "name": "Quinn",
-      "email": "Bruce4@hotmail.com",
-      "address": "Southwest",
-      "country": "Borders",
-      "phone": "399-802-9636",
-      "vehicle": "Lamborghini Malibu",
-      "model": "Sentra",
-      "color": "green",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/scottgallant/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
-      "id": "18c282aa-f892-4c8a-801a-5ba8508a0093",
-      "name": "Helene",
-      "email": "Eudora.Funk@hotmail.com",
-      "address": "Southwest",
-      "country": "Buckinghamshire",
-      "phone": "817.565.7213",
-      "vehicle": "Ford Roadster",
-      "model": "Colorado",
-      "color": "tan",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/mwarkentin/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
       "id": "1a46433d-527f-4162-b7d6-46d57694c10e",
       "name": "Cameron",
       "email": "Carmel.Reilly75@yahoo.com",

@@ -56,6 +56,9 @@
       <VBtn @click="isDisabled = !isDisabled" color="primary">
         {{ isDisabled ? 'EDIT' : 'SAVE' }}
       </VBtn>
+      <VBtn class="ml-2" color="error" @click="deleteUser(customer.id)">
+        Delete
+      </VBtn>
     </VCard>
   </div>
 </template>
@@ -74,6 +77,15 @@ export default {
       .getUser(this.$route.params.id)
       .then(data => (this.customer = data.user))
       .catch(err => console.log(err))
+  },
+  methods: {
+    deleteUser(id) {
+      console.log('deleteUser -> id', id)
+      this.$api
+        .deleteUser(id)
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+    }
   }
 }
 </script>
