@@ -6,8 +6,14 @@ import vuetify from './plugins/vuetify'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import apiUsers from './api/index'
+import VueToast from 'vue-toast-notification'
+// Import one of the available themes
+//import 'vue-toast-notification/dist/theme-default.css';
+import 'vue-toast-notification/dist/theme-sugar.css'
+
 Vue.prototype.$api = apiUsers
 Vue.use(VueAxios, axios)
+Vue.use(VueToast)
 Vue.config.productionTip = false
 
 new Vue({

@@ -15,7 +15,7 @@ router.get('/:id', (req, res) => {
     .get('users')
     .find({ id })
     .value()
-  user ? res.json({ user }) : res.json({ message: 'user not found' })
+  user ? res.json({ user }) : res.json({ error: 'user not found' })
 })
 
 /** @description UPDATE User by id @param {object} - mutation  */
@@ -26,7 +26,7 @@ router.put('/:id', (req, res) => {
     .get('users')
     .find({ id })
     .value()
-  if (!user) return res.json({ message: `user with id:"${id}" not found` })
+  if (!user) return res.json({ error: `user with id:"${id}" not found` })
   const updatedUser = db
     .get('users')
     .find({ id })
@@ -46,7 +46,7 @@ router.delete('/:id', (req, res) => {
 
   !!userDeleted.length
     ? res.json({ message: 'user deleted!' })
-    : res.json({ message: 'user not found' })
+    : res.json({ error: 'user not found' })
 })
 
 /** @description DELETE ALL Users */

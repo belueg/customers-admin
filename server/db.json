@@ -1,84 +1,6 @@
 {
   "users": [
     {
-      "id": "1a46433d-527f-4162-b7d6-46d57694c10e",
-      "name": "Cameron",
-      "email": "Carmel.Reilly75@yahoo.com",
-      "address": "West",
-      "country": "Buckinghamshire",
-      "phone": "565-632-7063 x9425",
-      "vehicle": "Ford Land Cruiser",
-      "model": "Model 3",
-      "color": "gold",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/themadray/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
-      "id": "d9428852-bad1-4dc8-98a6-02ea2b37b381",
-      "name": "Maude",
-      "email": "Reilly.Haley@yahoo.com",
-      "address": "West",
-      "country": "Cambridgeshire",
-      "phone": "822.213.2018",
-      "vehicle": "Jeep ATS",
-      "model": "PT Cruiser",
-      "color": "turquoise",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/msveet/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
-      "id": "4a431909-2131-46ab-b61b-677df9b3efc2",
-      "name": "Barney",
-      "email": "Deondre_Schiller16@hotmail.com",
-      "address": "West",
-      "country": "Cambridgeshire",
-      "phone": "(306) 535-2381 x2466",
-      "vehicle": "Tesla 911",
-      "model": "Grand Caravan",
-      "color": "plum",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/supervova/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
-      "id": "44e964ac-8f70-4f75-9d1b-c9d970fd0380",
-      "name": "Lambert",
-      "email": "Benjamin93@yahoo.com",
-      "address": "South",
-      "country": "Bedfordshire",
-      "phone": "948-944-9282",
-      "vehicle": "Honda Camry",
-      "model": "A4",
-      "color": "magenta",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/matthewkay_/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
-      "id": "f7e3c14d-88b5-4af3-93f5-9bfd5a26f45c",
-      "name": "Eriberto",
-      "email": "Cristal88@gmail.com",
-      "address": "East",
-      "country": "Borders",
-      "phone": "612.658.7151 x9848",
-      "vehicle": "Chrysler Aventador",
-      "model": "Fiesta",
-      "color": "maroon",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/bfrohs/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
-      "id": "ef4ef956-737d-420a-ab98-86487d167549",
-      "name": "Jovany",
-      "email": "Ulices_Corkery@yahoo.com",
-      "address": "Southwest",
-      "country": "Cambridgeshire",
-      "phone": "1-984-972-3461 x95236",
-      "vehicle": "Dodge Golf",
-      "model": "Malibu",
-      "color": "white",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/mikaeljorhult/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
       "id": "c71410f1-e025-45b8-909a-9611963250a7",
       "name": "Afton",
       "email": "Jackson12@yahoo.com",
@@ -87,21 +9,8 @@
       "phone": "1-856-221-2252",
       "vehicle": "Ferrari LeBaron",
       "model": "LeBaron",
-      "color": "maroon",
+      "color": "pink",
       "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/jayphen/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
-      "id": "3b9b253f-59f4-4591-beff-90bfc7a7ceb0",
-      "name": "Modesto",
-      "email": "Demarco59@yahoo.com",
-      "address": "South",
-      "country": "Borders",
-      "phone": "(370) 541-6564 x83456",
-      "vehicle": "Fiat Explorer",
-      "model": "Cruze",
-      "color": "grey",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/sawrb/128.jpg",
       "bgImg": "http://placeimg.com/640/480/nature"
     },
     {
