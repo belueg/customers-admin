@@ -1,21 +1,8 @@
 {
   "users": [
     {
-      "id": "c71410f1-e025-45b8-909a-9611963250a7",
-      "name": "Afton",
-      "email": "Jackson12@yahoo.com",
-      "address": "Northwest",
-      "country": "Buckinghamshire",
-      "phone": "1-856-221-2252",
-      "vehicle": "Ferrari LeBaron",
-      "model": "LeBaron",
-      "color": "pink",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/jayphen/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
       "id": "5089018b-3701-4ae1-a84e-e98c32d61ee4",
-      "name": "Johanna",
+      "name": "Johannaaa",
       "email": "Cesar_Shields@yahoo.com",
       "address": "Northwest",
       "country": "Berkshire",
@@ -259,6 +246,11 @@
       "color": "grey",
       "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/nessoila/128.jpg",
       "bgImg": "http://placeimg.com/640/480/nature"
+    },
+    {
+      "id": "df2154212124",
+      "name": "belu",
+      "phone": "13523555"
     }
   ]
 }

@@ -83,4 +83,14 @@ router.post('/populate/:number', (req, res) => {
   res.json({ message: 'users created!', 'users': db.get('users').value() })
 })
 
+/** @description create customer */
+router.post('/new', (req,res) =>{
+  const customer = req.body
+  db.get('users')
+  .push(customer)
+  .write()
+
+  res.json({message:"customer created"})
+})
+
 module.exports = router

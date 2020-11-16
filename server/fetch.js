@@ -11,6 +11,7 @@ function api(endpoint = '', method, data = {}) {
 
 
 const populate = number => api(`populate/${number}`, 'post')
+const newCustomer = user => api(`new`, 'post', user)
 const getUsers = () => api('', 'get')
 const getUser = id => api(`${id}`, 'get')
 const updateUser = (id, mutation) => api(`${id}`, 'put', mutation)

@@ -13,7 +13,8 @@ const apiUsers = {
   getUsers: () => api('', 'get'),
   updateUser: (id, mutation) => api(`${id}`, 'put', mutation),
   deleteUser: id => api(`${id}`, 'delete'),
-  deleteUsers: () => api('', 'delete')
+  deleteUsers: () => api('', 'delete'),
+  newCustomer: user => api(`new`, 'post', user)
 }
 
 export default apiUsers

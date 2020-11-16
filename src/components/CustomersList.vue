@@ -1,7 +1,13 @@
 <template>
-  <div class="RestaurantList">
-    <div v-for="customer in customers" :key="customer.id">
-      <CustomerCard :customer="customer" />
+  <div class="customContainer">
+    <h1>Customers data</h1>
+    <RouterLink to="/newcustomer">
+      <VBtn color="primary">New customer</VBtn>
+    </RouterLink>
+    <div class="RestaurantList">
+      <div v-for="customer in customers" :key="customer.id" class="cards">
+        <CustomerCard :customer="customer" />
+      </div>
     </div>
   </div>
 </template>
@@ -30,6 +36,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.RestaurantList {
+.customContainer {
+  width: 80%;
+  margin: 0 auto;
+  h1 {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .RestaurantList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: auto;
+    padding: 30px 0px;
+    .cards {
+      width: 240px;
+      height: 218px;
+      margin: 12px 10px;
+      &:hover {
+        -webkit-box-shadow: 0px 1px 14px -1px rgba(33, 29, 25, 0.68);
+        box-shadow: 0px 1px 14px -1px rgba(33, 29, 25, 0.68);
+        cursor: pointer;
+      }
+    }
+  }
 }
 </style>
