@@ -1,16 +1,16 @@
 <template>
   <div class="NewCustomer">
     <VCard class="card">
-      <VTextField value="customer name" label="Name" />
-      <VTextField value="customer name" label="Name" />
-      <VTextField value="customer name" label="Name" />
-      <VTextField value="customer name" label="Name" />
-      <VTextField value="customer name" label="Name" />
-      <VTextField value="customer name" label="Name" />
-      <VTextField value="customer name" label="Name" />
-      <VTextField value="customer name" label="Name" />
+      <VTextField v-model="customer.name" label="Name" />
+      <VTextField v-model="customer.email" label="Email" />
+      <VTextField v-model="customer.address" label="Address" />
+      <VTextField v-model="customer.country" label="Country" />
+      <VTextField v-model="customer.phone" label="Phone" />
+      <VTextField v-model="customer.vehicle" label="Vehicle" />
+      <VTextField v-model="customer.model" label="Model" />
+      <VTextField v-model="customer.color" label="Color" />
 
-      <VBtn @click="isDisabled = !isDisabled" color="primary">
+      <VBtn @click="createCustomer" color="primary">
         create customer
       </VBtn>
     </VCard>
@@ -20,11 +20,27 @@
 <script>
 export default {
   name: 'NewCustomer',
-  mounted() {
-    this.$api
-      .newCustomer({ id: 'df2154212124', name: 'belu', phone: '13523555' })
-      .then(data => console.log(data))
-      .catch(err => console.log(err))
+  data() {
+    return {
+      customer: {
+        name: '',
+        email: '',
+        address: '',
+        country: '',
+        phone: '',
+        vehicle: '',
+        model: '',
+        color: ''
+      }
+    }
+  },
+  methods: {
+    createCustomer() {
+      this.$api
+        .newCustomer(this.customer)
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+    }
   }
 }
 </script>

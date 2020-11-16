@@ -85,7 +85,14 @@ router.post('/populate/:number', (req, res) => {
 
 /** @description create customer */
 router.post('/new', (req,res) =>{
-  const customer = req.body
+  const customer = {
+    ...req.body,
+   avatarUrl: faker.image.avatar(),
+      bgImg: faker.image.nature(),
+      id: faker.random.uuid()
+  }
+  
+  console.log(customer)
   db.get('users')
   .push(customer)
   .write()
