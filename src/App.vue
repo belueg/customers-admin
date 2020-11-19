@@ -1,6 +1,6 @@
 <template>
   <VApp>
-    <VAppBar app color="primary" dark>
+    <VAppBar app color="primary" class="navBar" dark>
       <RouterLink to="/">
         <h3 style="color:white;">Customers List</h3>
       </RouterLink>
@@ -27,3 +27,9 @@ export default {
   data: () => ({})
 }
 </script>
+
+<style lang="scss" scoped>
+.navBar {
+  position: 'relative';
+}
+</style>

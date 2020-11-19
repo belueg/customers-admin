@@ -1,19 +1,22 @@
 <template>
-  <div class="NewCustomer">
-    <VCard class="card">
-      <VTextField v-model="customer.name" label="Name" />
-      <VTextField v-model="customer.email" label="Email" />
-      <VTextField v-model="customer.address" label="Address" />
-      <VTextField v-model="customer.country" label="Country" />
-      <VTextField v-model="customer.phone" label="Phone" />
-      <VTextField v-model="customer.vehicle" label="Vehicle" />
-      <VTextField v-model="customer.model" label="Model" />
-      <VTextField v-model="customer.color" label="Color" />
+  <div class="NewCustomerContainer">
+    <h2 class="text-center mt-4">Fill in this form to create a new customer</h2>
+    <div class="NewCustomer">
+      <VCard class="card">
+        <VTextField v-model="customer.name" label="Name" />
+        <VTextField v-model="customer.email" label="Email" />
+        <VTextField v-model="customer.address" label="Address" />
+        <VTextField v-model="customer.country" label="Country" />
+        <VTextField v-model="customer.phone" label="Phone" />
+        <VTextField v-model="customer.vehicle" label="Vehicle" />
+        <VTextField v-model="customer.model" label="Model" />
+        <VTextField v-model="customer.color" label="Color" />
 
-      <VBtn @click="createCustomer" color="primary">
-        create customer
-      </VBtn>
-    </VCard>
+        <VBtn @click="createCustomer" color="primary">
+          create customer
+        </VBtn>
+      </VCard>
+    </div>
   </div>
 </template>
 
@@ -46,14 +49,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.NewCustomer {
-  width: 900px;
-  margin: 0 auto;
-  display: flex;
-  .card {
-    margin-top: 50px;
-    width: 100%;
-    padding: 30px;
+.NewCustomerContainer {
+  height: auto;
+  padding: 20px;
+  padding-bottom: 40px;
+  .NewCustomer {
+    width: 900px;
+
+    margin: 0 auto;
+    display: flex;
+    .card {
+      margin-top: 50px;
+      width: 100%;
+      padding: 30px;
+    }
   }
 }
 </style>

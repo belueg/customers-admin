@@ -1,76 +1,91 @@
 <template>
-  <div class="CustomerDetails">
-    <VCard class="card">
-      <VTextField
-        :value="customer.name"
-        v-model="customer.name"
-        label="Name"
-        :readonly="isDisabled"
-        :filled="isDisabled"
-      />
-      <VTextField
-        :value="customer.email"
-        v-model="customer.email"
-        label="Email"
-        :readonly="isDisabled"
-        :filled="isDisabled"
-      />
+  <div>
+    <h2 class="text-center mt-4">Here you can see and edit user's details</h2>
+    <div class="CustomerDetails">
+      <VCard class="card">
+        <VTextField
+          :value="customer.name"
+          v-model="customer.name"
+          label="Name"
+          :readonly="isDisabled"
+          :filled="isDisabled"
+          class="fieldHeight"
+        />
+        <VTextField
+          :value="customer.email"
+          v-model="customer.email"
+          label="Email"
+          :readonly="isDisabled"
+          :filled="isDisabled"
+          class="fieldHeight"
+        />
 
-      <VTextField
-        :value="customer.address"
-        v-model="customer.address"
-        label="Address"
-        :readonly="isDisabled"
-        :filled="isDisabled"
-      />
+        <VTextField
+          :value="customer.address"
+          v-model="customer.address"
+          label="Address"
+          :readonly="isDisabled"
+          :filled="isDisabled"
+          class="fieldHeight"
+        />
 
-      <VTextField
-        :value="customer.country"
-        v-model="customer.country"
-        label="Country"
-        :readonly="isDisabled"
-        :filled="isDisabled"
-      />
-      <VTextField
-        :value="customer.phone"
-        v-model="customer.phone"
-        label="Phone"
-        :readonly="isDisabled"
-        :filled="isDisabled"
-      />
-    </VCard>
-    <VCard class="card">
-      <VTextField
-        :value="customer.vehicle"
-        v-model="customer.vehicle"
-        label="Vehicle"
-        :readonly="isDisabled"
-        :filled="isDisabled"
-      />
-      <VTextField
-        :value="customer.model"
-        v-model="customer.model"
-        label="Model"
-        :readonly="isDisabled"
-        :filled="isDisabled"
-      />
-      <VTextField
-        :value="customer.color"
-        v-model="customer.color"
-        label="Color"
-        :readonly="isDisabled"
-        :filled="isDisabled"
-      />
-      <VBtn @click="isDisabled = !isDisabled" color="primary" v-if="isDisabled">
-        Edit
-      </VBtn>
-      <VBtn @click="saveData()" color="primary" v-else>
-        save
-      </VBtn>
-      <VBtn class="ml-2" color="error" @click="deleteUser(customer.id)">
-        Delete
-      </VBtn>
-    </VCard>
+        <VTextField
+          :value="customer.country"
+          v-model="customer.country"
+          label="Country"
+          :readonly="isDisabled"
+          :filled="isDisabled"
+          class="fieldHeight"
+        />
+        <VTextField
+          :value="customer.phone"
+          v-model="customer.phone"
+          label="Phone"
+          :readonly="isDisabled"
+          :filled="isDisabled"
+          class="fieldHeight"
+        />
+      </VCard>
+      <VCard class="card">
+        <VTextField
+          :value="customer.vehicle"
+          v-model="customer.vehicle"
+          label="Vehicle"
+          :readonly="isDisabled"
+          :filled="isDisabled"
+          class="fieldHeight"
+        />
+        <VTextField
+          :value="customer.model"
+          v-model="customer.model"
+          label="Model"
+          :readonly="isDisabled"
+          :filled="isDisabled"
+          class="fieldHeight"
+        />
+        <VTextField
+          :value="customer.color"
+          v-model="customer.color"
+          label="Color"
+          :readonly="isDisabled"
+          :filled="isDisabled"
+          class="fieldHeight"
+        />
+        <VBtn
+          @click="isDisabled = !isDisabled"
+          color="primary"
+          v-if="isDisabled"
+        >
+          Edit
+        </VBtn>
+        <VBtn @click="saveData()" color="primary" v-else>
+          save
+        </VBtn>
+        <VBtn class="ml-2" color="error" @click="deleteUser(customer.id)">
+          Delete
+        </VBtn>
+      </VCard>
+    </div>
   </div>
 </template>
 
@@ -136,6 +151,11 @@ export default {
     margin-top: 50px;
     width: 100%;
     padding: 30px;
+    .fieldHeight {
+      height: 56px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <VCard class="mx-auto customerCards" max-width="400">
-    <VImg class="white--text align-end" height="80px" :src="customer.avatarUrl">
+    <VImg class="white--text align-end" height="80px" :src="customer.bgImg">
       <VCardTitle>{{ customer.name }}</VCardTitle>
     </VImg>
 
@@ -8,7 +8,7 @@
       <div>{{ customer.email }}</div>
     </VCardText>
 
-    <VCardActions>
+    <VCardActions class="detailsBtn">
       <RouterLink
         class="text-decoration-none"
         :to="{ path: '/customer/' + customer.id }"
@@ -44,5 +44,10 @@ export default {
 .customerCards {
   width: 100%;
   height: 100%;
+  position: relative;
+  .detailsBtn {
+    position: absolute;
+    bottom: 10px;
+  }
 }
 </style>
