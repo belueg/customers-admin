@@ -10,7 +10,7 @@ npm install
 npm run serve
 ```
 
-### This is important !!👀  Because it's not just another part of the default readme generated from VUE. You have to run this to start the "backend" server to see the data from the api:
+### This is important !!👀  Because it's not just another part of the default readme generated from VUE. You have to run this to start the "backend" server to see the data from the api. But first >cd server
 ```
 npm run start
 ```
