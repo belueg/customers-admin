@@ -44,7 +44,7 @@ router.delete('/:id', (req, res) => {
     .remove({ id })
     .write()
 
-  !!userDeleted.length
+  userDeleted.length
     ? res.json({ message: 'user deleted!' })
     : res.json({ error: 'user not found' })
 })
@@ -84,20 +84,20 @@ router.post('/populate/:number', (req, res) => {
 })
 
 /** @description create customer */
-router.post('/new', (req,res) =>{
+router.post('/new', (req, res) => {
   const customer = {
     ...req.body,
-   avatarUrl: faker.image.avatar(),
-      bgImg: faker.image.nature(),
-      id: faker.random.uuid()
+    avatarUrl: faker.image.avatar(),
+    bgImg: faker.image.nature(),
+    id: faker.random.uuid()
   }
-  
+
   console.log(customer)
   db.get('users')
-  .push(customer)
-  .write()
+    .push(customer)
+    .write()
 
-  res.json({message:"customer created"})
+  res.json({ message: 'customer created' })
 })
 
 module.exports = router
