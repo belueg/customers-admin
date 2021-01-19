@@ -1,13 +1,14 @@
 <template>
   <div class="customContainer">
     <h1>Customers data</h1>
+    <input type="text" v-model="search" />
     <RouterLink to="/newcustomer">
       <VBtn color="primary" class="newCustomerBtn" title="add a new customer">
         +
       </VBtn>
     </RouterLink>
     <div class="RestaurantList">
-      <div v-for="customer in customers" :key="customer.id" class="cards">
+      <div v-for="customer in filteredNames" :key="customer.id" class="cards">
         <CustomerCard :customer="customer" />
       </div>
     </div>
@@ -24,7 +25,8 @@ export default {
   },
   data() {
     return {
-      customers: []
+      customers: [],
+      search: ''
     }
   },
   mounted() {
@@ -33,6 +35,13 @@ export default {
       .then(data => (this.customers = data.users))
       .catch(err => console.log(err))
     console.log(this.customers)
+  },
+  computed: {
+    filteredNames() {
+      return this.customers.filter(customer =>
+        customer.name.includes(this.search)
+      )
+    }
   }
 }
 </script>
@@ -72,5 +81,8 @@ export default {
       }
     }
   }
+}
+input {
+  outline: 1px solid blue;
 }
 </style>

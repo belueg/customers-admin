@@ -14,19 +14,6 @@
       "bgImg": "http://placeimg.com/640/480/nature"
     },
     {
-      "id": "419ef9b0-845e-4238-9ee6-a46d1ecfeb4e",
-      "name": "Fabiola",
-      "email": "Hank_Hoppe20@hotmail.com",
-      "address": "South",
-      "country": "Avon",
-      "phone": "(351) 775-7750 x966",
-      "vehicle": "Jaguar Roadster",
-      "model": "PT Cruiser",
-      "color": "gold",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/jeremery/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
       "id": "dcb69c8b-ad91-46b9-ae66-f295dc45c0a6",
       "name": "Kathryne",
       "email": "Britney95@hotmail.com",
@@ -220,19 +207,6 @@
       "color": "grey",
       "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/nessoila/128.jpg",
       "bgImg": "http://placeimg.com/640/480/nature"
-    },
-    {
-      "name": "BÁRBARA BELÉN GONZÁLEZ",
-      "email": "belg1294@gmail.com",
-      "address": "L'ESTACIO",
-      "country": "España",
-      "phone": "653303965",
-      "vehicle": "sadasd",
-      "model": "saddas",
-      "color": "asddsa",
-      "avatarUrl": "https://s3.amazonaws.com/uifaces/faces/twitter/mactopus/128.jpg",
-      "bgImg": "http://placeimg.com/640/480/nature",
-      "id": "128614c6-cc89-4ee4-9879-1ca3eecc043e"
     }
   ]
 }
